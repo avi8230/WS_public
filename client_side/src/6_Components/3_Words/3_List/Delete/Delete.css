@@ -1,0 +1,74 @@
+/* Overlay Container ------------------------- */
+.Delete #container {
+    border: solid 1px red;
+    border-radius: 15px;
+    padding: 6px;
+    width: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Text ------------------------- */
+.Delete #textDiv {
+    color: red;
+}
+
+.Delete #textDiv>span {
+    color: #f2f2f2;
+    font-size: 25px;
+}
+
+/* Buttons ------------------------- */
+.Delete .fa-trash-can {
+    color: red;
+    cursor: pointer;
+}
+
+/* --- */
+.Delete #buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin: 10px 3px 0px 3px;
+}
+
+.Delete button {
+    background-color: transparent;
+    border: none !important;
+    padding: 0;
+}
+
+.Delete button>.fa-trash-can {
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    width: 43px;
+    height: 20px;
+}
+
+.Delete #closeSpan {
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 3px 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (min-width: 426px) {
+
+    .Delete button>.fa-trash-can:hover,
+    .Delete #closeSpan:hover {
+        color: black;
+        background-color: red;
+        border: 1px solid red;
+    }
+}

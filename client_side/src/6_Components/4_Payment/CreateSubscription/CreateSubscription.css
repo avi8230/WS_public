@@ -1,0 +1,18 @@
+.CreateSubscription h2 {
+    margin-bottom: 4px;
+}
+
+.CreateSubscription>div {
+    margin: auto;
+    padding: 17px 17px 0 17px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    /* border: 6px dashed rgb(21, 21, 21); */
+}
+
+/* Mobile ----------------- */
+@media (max-width: 287px) {
+    .CreateSubscription>div {
+        padding: 10px 10px 0 10px;
+    }
+}

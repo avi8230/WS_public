@@ -1,0 +1,401 @@
+/* General ---------------------------------------------- */
+.Add form {
+    border: 1px solid #FFC439;
+    border-radius: 15px;
+    padding: 2px 5px 1px 5px;
+}
+
+.Add form>div>div {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.Add #pictureDiv>div {
+    display: flex;
+    align-items: center;
+}
+
+.Add #pictureDiv>div>div {
+    display: flex;
+}
+
+.Add #newCategoryDiv {
+    display: flex;
+}
+
+.Add #voiceDiv {
+    margin-left: 6px;
+}
+
+/* Img ---------------------------------------------- */
+.Add img {
+    width: 90px;
+    height: 86px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translate(-45.5px, 2px);
+}
+
+.Add #imgDiv {
+    width: 94px;
+    height: 90px;
+    border: 1px dashed #FFC439;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+/* X */
+.Add .fa-xmark {
+    position: absolute;
+    transform: translate(28.9px, 2px);
+    color: #FFC439;
+    background-color: rgb(70, 49, 0);
+    border-radius: 5px;
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+/* File Uploader  */
+.Add #fileUploader {
+    width: 95px;
+    height: 90px;
+    font-size: 14px;
+    color: #FFC439;
+    border: 1px solid #FFC439;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* input ---------------------------------------------- */
+.Add input,
+.Add select,
+.Add textarea {
+    background-color: rgb(21, 21, 21);
+    color: #f2f2f2;
+    border: 1px solid #FFC439;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.Add select {
+    padding: 2px;
+}
+
+.Add input,
+.Add textarea {
+    padding: 1px 5px;
+}
+
+.Add input:focus,
+.Add select:focus,
+.Add textarea:focus {
+    outline: none;
+}
+
+.Add input[type="text"] {
+    width: 185px;
+    font-size: 20px;
+}
+
+.Add textarea {
+    display: block;
+    min-height: 175px;
+    width: 185px;
+    min-width: 185px;
+    font-size: 20px;
+}
+
+.Add #languageSelect {
+    width: 193px;
+}
+
+/* --- */
+.Add #categorySelect,
+.Add #newCategoryInput {
+    width: 100px;
+}
+
+.Add #newCategoryInput {
+    font-size: 14px;
+    height: 19px;
+}
+
+/* Label */
+.Add label {
+    font-size: 15px;
+    color: #FFC439;
+}
+
+.Add #wordLabel,
+.Add .translationLabel,
+.Add #sentenceLabel,
+.Add #pictureLabel {
+    width: 100px;
+    text-align: right;
+    margin-right: 8px;
+}
+
+.Add #newCategoryLabel {
+    margin: 0 4px 0 7px;
+}
+
+/* Error Message ---------------------------------------------- */
+.Add .errorMessage {
+    color: rgb(255, 60, 60);
+    font-size: 13px;
+    max-width: 192px;
+}
+
+/* Links ---------------------------------------------- */
+.Add a {
+    color: #FFC439;
+    font-size: 12px;
+    /* text-decoration: none; */
+    transition: 0.2s;
+}
+
+.Add a:hover {
+    color: #f2f2f2;
+}
+
+.Add .translationA {
+    margin-left: 8px;
+}
+
+.Add #sentenceDivA {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Add #pictureA {
+    margin-left: 8px;
+}
+
+/* Buttons ---------------------------------------------- */
+.Add #addButton {
+    cursor: pointer;
+    color: #FFC439;
+    background-color: #444444;
+    border: 1px solid #f2f2f2;
+    padding: 3px 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Add #addButton:hover {
+    color: black;
+    background-color: #FFC439;
+    border: 1px solid #FFC439;
+}
+
+/* --- */
+.Add #buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin: 3px;
+}
+
+.Add button {
+    background-color: transparent;
+    border: none !important;
+    padding: 0;
+}
+
+.Add button>.fa-plus {
+    color: #FFC439;
+    border: 1px solid #FFC439;
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 43px;
+    height: 20px;
+}
+
+.Add #closeSpan {
+    color: #FFC439;
+    border: 1px solid #FFC439;
+    border-radius: 5px;
+    padding: 3px 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (min-width: 426px) {
+
+    .Add button>.fa-plus:hover,
+    .Add #closeSpan:hover {
+        color: black;
+        background-color: #FFC439;
+        border: 1px solid #FFC439;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Mobile -------------------------------------------------------------------------------------------- */
+@media (max-width: 417px) {
+    .Add form {
+        width: 95vw;
+        height: 90vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 1px 3px 0px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Add form>div:first-child {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Add form>div>div {
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .Add #pictureDiv>div {
+        flex-direction: column;
+    }
+
+    .Add #categoryAndNewCategoryDiv,
+    .Add #languageAndVoiceDiv {
+        margin-top: 10px;
+    }
+
+    .Add #newCategoryDiv {
+        margin-top: 5px;
+    }
+
+    .Add #voiceDiv {
+        margin-top: 5px;
+    }
+
+    /* Img ---------------------------------------------- */
+    .Add img {
+        width: 60px;
+        height: 60px;
+        transform: translate(-30px, 2.2px);
+    }
+
+    .Add #imgDiv {
+        width: 65px;
+        height: 64px;
+    }
+
+    /* X */
+    .Add .fa-xmark {
+        font-size: 15px;
+        transform: translate(15px, 2px);
+    }
+
+    /* File Uploader  */
+    .Add #fileUploader {
+        width: 65px;
+        height: 65px;
+        font-size: 11px;
+        padding: 2px;
+        box-sizing: border-box;
+    }
+
+    /* Input ---------------------------------------------- */
+    .Add input,
+    .Add textarea {
+        padding: 1px 3px;
+    }
+
+    .Add input[type="text"] {
+        font-size: 2.5vh;
+    }
+
+    .Add textarea {
+        font-size: 2.5vh;
+        min-height: 8vh;
+        width: 90vw;
+    }
+
+    /* --- */
+    .Add select {
+        font-size: 2vh;
+    }
+
+    .Add #newCategoryInput {
+        font-size: 2.5vh;
+        height: auto;
+    }
+
+    .Add #newCategoryLabel {
+        margin: auto;
+        margin-right: 4px;
+    }
+
+    /* Label */
+    .Add label {
+        font-size: 2.2vh;
+    }
+
+    .Add #wordLabel,
+    .Add .translationLabel,
+    .Add #sentenceLabel,
+    .Add #pictureLabel {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    /* Error Message ---------------------------------------------- */
+    .Add .errorMessage {
+        font-size: 1.8vh;
+        max-width: 200px;
+    }
+
+    /* Links ---------------------------------------------- */
+    .Add a {
+        color: rgb(154, 154, 154);
+        font-size: 1.8vh;
+    }
+
+    .Add .translationA {
+        margin-left: 0;
+    }
+
+    .Add #sentenceDivA {
+        margin-left: 0;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .Add #pictureA {
+        margin-left: 0;
+    }
+
+    /* Buttons ---------------------------------------------- */
+    .Add #buttonsDiv {
+        margin: 3vh 0 4px 0;
+    }
+
+    .Add button>.fa-plus {
+        padding: 5px 10px;
+        width: 32px;
+        height: 15px;
+    }
+
+    .Add #closeSpan {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+}

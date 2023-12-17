@@ -1,0 +1,25 @@
+.overlay__background {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 200vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.overlay__container {
+    background-color: rgb(21, 21, 21);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 9999;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+}

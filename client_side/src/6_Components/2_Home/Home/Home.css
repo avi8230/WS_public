@@ -1,0 +1,284 @@
+/* General ---------------------------- */
+.Home {
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.Home #homeDiv,
+.Home #wordsDiv,
+.Home #paymentDiv,
+.Home #applicationDiv,
+.Home #contactUsDiv {
+    /* border-top: solid 1px #b18a30; */
+    border-bottom: solid 5px #FFC439;
+    border-radius: 30px;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.Home #applicationDiv {
+    border-right: solid 5px rgb(21, 21, 21);
+    border-left: solid 5px rgb(21, 21, 21);
+    border-top: solid 1px rgb(21, 21, 21);
+    border-bottom: solid 1px rgb(21, 21, 21);
+}
+
+.Home #paymentDiv,
+.Home #contactUsDiv {
+    border-right: solid 5px rgb(126, 126, 126);
+    border-left: solid 5px rgb(126, 126, 126);
+    border-top: solid 1px rgb(126, 126, 126);
+    border-bottom: solid 1px rgb(126, 126, 126);
+}
+
+.Home #paymentDiv:hover,
+.Home #contactUsDiv:hover {
+    cursor: pointer;
+    background-color: black;
+    border-right: solid 6px #FFC439;
+    border-left: solid 6px #FFC439;
+    border-top: solid 1px #FFC439;
+    border-bottom: solid 1px #FFC439;
+
+    /* https://unused-css.com/blog/css-shake-animation/ */
+    /* https://www.w3schools.com/howto/howto_css_shake_image.asp */
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    /* animation: shake 0.5s; */
+    /* When the animation is finished, start again */
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/* @keyframes horizontal-shaking {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(5px)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    75% {
+        transform: translateY(5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+} */
+
+.Home #homeDiv {
+    padding-top: 0;
+}
+
+.Home #rightsDiv {
+    color: rgb(222, 159, 43);
+    font-size: 15px;
+    width: 177px;
+    margin: auto;
+    padding: 10px;
+    border-top: solid 3px #FFC439;
+    border-bottom: solid 3px #FFC439;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* "Three Parts" ---------------------------- */
+.Home #wordsDiv div {
+    border-right: solid 5px rgb(126, 126, 126);
+    border-left: solid 5px rgb(126, 126, 126);
+    border-top: solid 1px rgb(126, 126, 126);
+    border-bottom: solid 1px rgb(126, 126, 126);
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-top: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Home #wordsDiv div:hover {
+    border-right: solid 6px #FFC439;
+    border-left: solid 6px #FFC439;
+    border-top: solid 1px #FFC439;
+    border-bottom: solid 1px #FFC439;
+    /* border-radius: 5px; */
+    background-color: black;
+}
+
+/* --- */
+.Home h3 {
+    font-size: 23px;
+    margin: 4px;
+    color: #f2f2f2;
+}
+
+.Home #wordsDiv p {
+    color: #f2f2f2;
+    font-size: 23px;
+}
+
+/* --- */
+.Home #tipSpan {
+    color: #c6c6c6;
+    font-size: 14px;
+}
+
+.Home b {
+    color: rgb(222, 159, 43);
+}
+
+/* h, p, a, i ---------------------------- */
+.Home #homeDiv>h1 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.Home h1 {
+    font-size: 30px;
+    margin: 4px 0;
+    /* color: rgb(222, 159, 43); */
+    color: #FFC439;
+}
+
+.Home h2 {
+    font-size: 23px;
+    font-weight: 100;
+    margin: 0 10px 2px 10px;
+    color: rgb(222, 159, 43);
+}
+
+.Home p {
+    font-size: 23px;
+    margin: 4px 10px;
+    color: #f2f2f2;
+}
+
+.Home a {
+    text-decoration: none;
+}
+
+.Home #guideA {
+    color: #c6c6c6;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    transition: 0.3s;
+}
+
+.Home #guideA:hover {
+    color: red;
+    text-decoration-color: #c6c6c6;
+}
+
+.Home #websiteAddressSpan {
+    color: rgb(222, 159, 43);
+    border-right: solid 6px #FFC439;
+    border-left: solid 6px #FFC439;
+    border-top: solid 1px #FFC439;
+    border-bottom: solid 1px #FFC439;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.Home #websiteAddressSpan:hover {
+    color: black;
+    background-color: #FFC439;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.Home .fa-ellipsis-vertical {
+    font-size: 20px;
+}
+
+.Home .key {
+    color: red;
+    font-weight: bold;
+}
+
+.Home .fa-ellipsis-vertical,
+.Home #installSpan {
+    color: red;
+}
+
+/* logo, email, rights ---------------------------- */
+.Home #logo {
+    font-family: 'Leckerli One', 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.Home #email {
+    word-break: break-all;
+}
+
+.Home .fa-regular {
+    margin-right: 8px;
+}
+
+/* numOfLanguages ---------------------------- */
+.Home #numOfLanguages {
+    font-weight: bold;
+}

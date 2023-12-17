@@ -1,0 +1,90 @@
+/* General ---------------------------------- */
+.Connection {
+    width: 274px;
+    /* margin-top: 30px; */
+}
+
+/* Menu Buttons ---------------------------------- */
+.Connection #buttonsDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3px;
+    width: 147px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Connection .unClicked-button {
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 4px 15px;
+    margin: 0 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Connection .clicked-button {
+    color: black;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 4px 15px;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.Connection .loginSpan:hover,
+.Connection .registerSpan:hover,
+.Connection .passwordResetSpan:hover {
+    color: black;
+    background-color: #f2f2f2;
+}
+
+/* Content ---------------------------------- */
+.Connection #contentDiv {
+    border-right: solid 1px #FFC439;
+    border-left: solid 1px #FFC439;
+    border-bottom: solid 15px #FFC439;
+    border-radius: 30px 30px 10px 10px;
+    height: 240px;
+    margin-top: 3px;
+    padding: 0 10px 6px 10px;
+}
+
+/* login, Register, Password Reset */
+.Connection>div>div {
+    height: 100%;
+}
+
+/* form */
+.Connection form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.Connection .inputBoxesDiv {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* span */
+.Connection span {
+    color: #f2f2f2;
+    margin: 10px;
+}
+
+@media (max-width: 272px) {
+    .Connection {
+        width: 98vw;
+    }
+}

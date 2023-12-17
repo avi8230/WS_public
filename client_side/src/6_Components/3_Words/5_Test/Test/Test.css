@@ -1,0 +1,248 @@
+/* Test ------------------------------------- */
+.Test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #FFC439;
+    border-radius: 20px;
+    overflow-x: hidden;
+    margin-top: 1px;
+}
+
+/* Word and Sentence ------------------------------------- */
+.Test #wordContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 4vh;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    overflow-y: auto;
+}
+
+.Test #wordAndTranslationDiv {
+    padding: 0px 8px;
+    word-break: break-all;
+    /* cursor: pointer; */
+    border-bottom: 1px dashed rgb(97, 97, 97);
+    border-radius: 10px;
+}
+
+.Test #sentenceAndTranslationDiv {
+    padding: 0px 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* cursor: pointer; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed rgb(97, 97, 97);
+    border-radius: 10px;
+}
+
+.Test #sentenceAndTranslationDiv>div {
+    margin: auto;
+}
+
+.Test .translationDiv {
+    color: rgb(143, 143, 143);
+}
+
+.Test .hideAnswer {
+    color: rgb(21, 21, 21);
+}
+
+/* Img ------------------------------------- */
+.Test #wordContainer #imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vh;
+    height: 50vh;
+    border-bottom: 1px dashed rgb(97, 97, 97);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Test #wordContainer #imgDiv img {
+    max-width: 97%;
+    max-height: 97%;
+    border: solid 1px #f2f2f2;
+    border-radius: 10px;
+}
+
+.Test #wordContainer #imgDiv>i {
+    font-size: 100px;
+    color: rgb(55, 55, 55);
+}
+
+/* Controllers ------------------------------------- */
+.Test #sumMutedScoreDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Test #sumMutedScoreDiv #sumDiv {
+    width: 93px;
+}
+
+.Test #sumMutedScoreDiv #scoreDiv {
+    width: 50px;
+}
+
+.Test #sumMutedScoreDiv #updateDiv {
+    width: 50px;
+}
+
+.Test #sumMutedScoreDiv #MutedDiv {
+    width: 88px;
+}
+
+.Test #controllersDiv>#buttonsDiv {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    font-size: 40px;
+    margin-top: 3px;
+    width: 300px;
+}
+
+.Test #buttonsDiv>div {
+    display: flex;
+    gap: 10px;
+}
+
+.Test #scoreDiv {
+    color: #FFC439;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Test #MutedDiv {
+    width: 12px;
+}
+
+.Test #hideAnswerDiv {
+    width: 50px;
+}
+
+.Test i:hover {
+    cursor: pointer;
+}
+
+/* colors */
+.Test .fa-circle-arrow-left,
+.Test .fa-circle-arrow-right {
+    color: #f2f2f2;
+}
+
+.Test .fa-circle-minus {
+    color: red;
+}
+
+.Test .fa-circle-plus {
+    color: rgb(82, 255, 47);
+}
+
+.Test .fa-volume-low,
+.Test .fa-volume-xmark {
+    color: #f2f2f2;
+}
+
+.Test .fa-eye,
+.Test .fa-eye-slash {
+    color: #FFC439;
+}
+
+/* Mobile ------------------------------------- */
+@media (max-width: 400px) {
+    .Test #wordContainer #imgDiv {
+        width: 35vh;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 266px) {
+    .Test #buttonsDiv {
+        font-size: 7vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .Test #buttonsDiv {
+        width: 95vw;
+    }
+}
+
+/* Loading image and audio -------------------- */
+.Test #wordAndTranslationDiv>div,
+.Test #sentenceAndTranslationDiv>div>div {
+    position: relative;
+}
+
+.Test #wordAndTranslationDiv .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Test #sentenceAndTranslationDiv .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Test .loading img {
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
+/* Update score -------------------- */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Test .flicker-text {
+    animation: flicker 1s infinite;
+}
+
+/* Display score -------------------- */
+.Test #wordContainer {
+    position: relative;
+}
+
+.Test #displayScoreDiv {
+    position: absolute;
+    top: 47%;
+    left: 50;
+
+    font-size: 40px;
+    color: #FFC439;
+    border-radius: 50px;
+    padding: 0 18px;
+}
+
+.Test #displayScoreDiv>img {
+    border: 0;
+    width: 50px;
+    height: 50px;
+}

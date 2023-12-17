@@ -1,0 +1,81 @@
+.Table .wordTd,
+.Table .wordTranslationTd,
+.Table .sentenceTd,
+.Table .sentenceTranslationTd,
+.Table .categoryTd {
+    padding: 1px 5px;
+}
+
+.Table .wordTd,
+.Table .wordTranslationTd,
+.Table .sentenceTd,
+.Table .sentenceTranslationTd {
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.Table .wordTd,
+.Table .wordTranslationTd {
+    min-width: 90px;
+    max-width: 170px;
+    word-break: break-all;
+}
+
+.Table .sentenceTd,
+.Table .sentenceTranslationTd {
+    min-width: 150px;
+    max-width: 600px;
+}
+
+.Table .wordTd:hover,
+.Table .sentenceTd:hover,
+.Table .wordTranslationTd,
+.Table .sentenceTranslationTd {
+    cursor: pointer;
+}
+
+.Table .wordTranslationTd,
+.Table .sentenceTranslationTd {
+    color: rgb(143, 143, 143);
+}
+
+.Table .categoryTd {
+    min-width: 50px;
+    max-width: 80px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.Table .dateTd {
+    width: 50px;
+    min-width: 50px;
+    font-size: 10px;
+}
+
+/* img ----------------------------------------- */
+.Table .pictureTd {
+    padding: 0;
+    cursor: pointer;
+}
+
+.Table td>img {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: transform 0.1s ease-in-out;
+    position: relative;
+    z-index: 99;
+}
+
+.Table img:hover {
+    transform: scale(2.5);
+    z-index: 999;
+}
+
+/* hide translation ----------------------------------------- */
+.Table .hideTranslation {
+    color: rgb(21, 21, 21);
+}

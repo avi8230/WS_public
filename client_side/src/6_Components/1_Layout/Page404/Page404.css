@@ -1,0 +1,15 @@
+.Page404 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Page404 h1 {
+    margin: 20px 10px 4px 10px;
+}
+
+.Page404 p {
+    margin: 0;
+}

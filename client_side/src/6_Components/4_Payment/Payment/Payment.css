@@ -1,0 +1,33 @@
+.Payment {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* h ----------------- */
+.Payment h1,
+.Payment h2 {
+    color: #FFC439;
+    text-align: center;
+}
+
+.Payment h1 {
+    font-size: 30px;
+    margin: 10px 0 15px 0;
+}
+
+.Payment h2 {
+    font-size: 23px;
+}
+
+/* div ----------------- */
+.Payment>div {
+    border-top: solid 1px #FFC439;
+    border-bottom: solid 5px #FFC439;
+    border-radius: 15px;
+    padding: 0 17px;
+    text-align: center;
+    max-width: fit-content;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: auto;
+}

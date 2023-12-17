@@ -1,0 +1,391 @@
+/* General ---------------------------------------------- */
+.Update form {
+    border: 1px solid rgb(82, 255, 47);
+    border-radius: 15px;
+    padding: 2px 5px 1px 5px;
+}
+
+.Update form>div>div {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.Update #pictureDiv>div {
+    display: flex;
+    align-items: center;
+}
+
+.Update #pictureDiv>div>div {
+    display: flex;
+}
+
+.Update #newCategoryDiv {
+    display: flex;
+}
+
+.Update #voiceDiv {
+    margin-left: 6px;
+}
+
+/* Img ---------------------------------------------- */
+.Update img {
+    width: 90px;
+    height: 86px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translate(-44.5px, 2px);
+}
+
+.Update #imgDiv {
+    width: 94px;
+    height: 90px;
+    border: 1px dashed rgb(82, 255, 47);
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+/* X */
+.Update .fa-xmark {
+    position: absolute;
+    transform: translate(29.3px, 2px);
+    color: rgb(82, 255, 47);
+    background-color: rgb(2, 62, 5);
+    border-radius: 5px;
+    padding: 0 3px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* File Uploader  */
+.Update #fileUploader {
+    width: 95px;
+    height: 90px;
+    font-size: 14px;
+    color: rgb(82, 255, 47);
+    border: 1px solid rgb(82, 255, 47);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Input ---------------------------------------------- */
+.Update input,
+.Update select,
+.Update textarea {
+    background-color: rgb(21, 21, 21);
+    color: #f2f2f2;
+    border: 1px solid rgb(82, 255, 47);
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.Update select {
+    padding: 2px;
+}
+
+.Update input,
+.Update textarea {
+    padding: 1px 5px;
+}
+
+.Update input:focus,
+.Update select:focus,
+.Update textarea:focus {
+    outline: none;
+}
+
+.Update input[type="text"] {
+    width: 185px;
+    font-size: 20px;
+}
+
+.Update textarea {
+    display: block;
+    min-height: 175px;
+    width: 185px;
+    min-width: 185px;
+    font-size: 20px;
+}
+
+.Update #languageSelect {
+    width: 193px;
+}
+
+/* --- */
+.Update #categorySelect,
+.Update #newCategoryInput {
+    width: 100px;
+}
+
+.Update #newCategoryInput {
+    font-size: 14px;
+    height: 19px;
+}
+
+/* Label */
+.Update label {
+    font-size: 15px;
+    color: rgb(82, 255, 47);
+}
+
+.Update #wordLabel,
+.Update .translationLabel,
+.Update #sentenceLabel,
+.Update #pictureLabel {
+    width: 100px;
+    text-align: right;
+    margin-right: 8px;
+}
+
+.Update #newCategoryLabel {
+    margin: 0 4px 0 7px;
+}
+
+/* Error Message ---------------------------------------------- */
+.Update .errorMessage {
+    color: rgb(255, 60, 60);
+    font-size: 13px;
+    max-width: 192px;
+}
+
+/* Links ---------------------------------------------- */
+.Update a {
+    color: rgb(82, 255, 47);
+    font-size: 12px;
+    /* text-decoration: none; */
+    transition: 0.2s;
+}
+
+.Update a:hover {
+    color: #f2f2f2;
+}
+
+.Update .translationA {
+    margin-left: 8px;
+}
+
+.Update #sentenceDivA {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Update #pictureA {
+    margin-left: 8px;
+}
+
+/* buttons ---------------------------------------------- */
+.Update .fa-pen-to-square {
+    cursor: pointer;
+    color: rgb(82, 255, 47);
+}
+
+/* --- */
+.Update #buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin: 3px;
+}
+
+.Update button {
+    background-color: transparent;
+    border: none !important;
+    padding: 0;
+}
+
+.Update button>.fa-pen-to-square {
+    border: 1px solid rgb(82, 255, 47);
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    width: 43px;
+    height: 20px;
+}
+
+.Update #closeSpan {
+    color: rgb(82, 255, 47);
+    border: 1px solid rgb(82, 255, 47);
+    border-radius: 5px;
+    padding: 3px 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (min-width: 426px) {
+
+    .Update button>.fa-pen-to-square:hover,
+    .Update #closeSpan:hover {
+        color: black;
+        background-color: rgb(82, 255, 47);
+        border: 1px solid rgb(82, 255, 47);
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Mobile -------------------------------------------------------------------------------------------- */
+@media (max-width: 417px) {
+    .Update form {
+        width: 95vw;
+        height: 90vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 1px 3px 0px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Update form>div:first-child {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Update form>div>div {
+        flex-direction: column;
+        padding: 2;
+    }
+
+    .Update #pictureDiv>div {
+        flex-direction: column;
+    }
+
+    .Update #categoryAndNewCategoryDiv,
+    .Update #languageAndVoiceDiv {
+        margin-top: 10px;
+    }
+
+    .Update #newCategoryDiv {
+        margin-top: 5px;
+    }
+
+    .Update #voiceDiv {
+        margin-top: 5px;
+    }
+
+    /* Img ---------------------------------------------- */
+    .Update img {
+        width: 61px;
+        height: 61px;
+        transform: translate(-33.6px, -1.2px);
+    }
+
+    .Test .Update img {
+        transform: translate(-30.5px, 1.4px) !important;
+    }
+
+    .Update #imgDiv {
+        width: 65px;
+        height: 64px;
+    }
+
+    /* X */
+    .Update .fa-xmark {
+        font-size: 15px;
+        transform: translate(15px, 2px);
+    }
+
+    /* File Uploader  */
+    .Update #fileUploader {
+        width: 65px;
+        height: 65px;
+        font-size: 11px;
+        padding: 2px;
+        box-sizing: border-box;
+    }
+
+    /* Input ---------------------------------------------- */
+    .Update input,
+    .Update textarea {
+        padding: 1px 3px;
+    }
+
+    .Update input[type="text"] {
+        font-size: 2.5vh;
+    }
+
+    .Update textarea {
+        font-size: 2.5vh;
+        min-height: 8vh;
+        width: 90vw;
+    }
+
+    /* --- */
+    .Update select {
+        font-size: 2vh;
+    }
+
+    .Update #newCategoryInput {
+        font-size: 2.5vh;
+        height: auto;
+    }
+
+    .Update #newCategoryLabel {
+        margin: auto;
+        margin-right: 4px;
+    }
+
+    /* Label */
+    .Update label {
+        font-size: 2.2vh;
+    }
+
+    .Update #wordLabel,
+    .Update .translationLabel,
+    .Update #sentenceLabel,
+    .Update #pictureLabel {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    /* Error Message ---------------------------------------------- */
+    .Update .errorMessage {
+        font-size: 1.8vh;
+        max-width: 200px;
+    }
+
+    /* Links ---------------------------------------------- */
+    .Update a {
+        color: rgb(154, 154, 154);
+        font-size: 1.8vh;
+    }
+
+    .Update .translationA {
+        margin-left: 0;
+    }
+
+    .Update #sentenceDivA {
+        margin-left: 0;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .Update #pictureA {
+        margin-left: 0;
+    }
+
+    /* buttons ---------------------------------------------- */
+    .Update #buttonsDiv {
+        margin: 3vh 0 4px 0;
+    }
+
+    .Update button>.fa-pen-to-square {
+        padding: 5px 10px;
+        width: 32px;
+        height: 15px;
+    }
+
+    .Update #closeSpan {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+}

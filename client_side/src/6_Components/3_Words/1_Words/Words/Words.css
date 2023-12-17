@@ -1,0 +1,80 @@
+.Words {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/* 3 buttons -------------------- */
+.Words #buttons {
+    margin: 0px 0 3px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Words #buttons>div {
+    display: inline;
+    font-weight: bold;
+}
+
+.Words #buttons i {
+    color: #FFC439;
+}
+
+.Words #buttons>.unClicked-button {
+    cursor: pointer;
+    color: #f2f2f2;
+    padding: 2.4px 22px;
+    margin: 0 2px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.Words #buttons>.clicked-button {
+    cursor: pointer;
+    padding: 2.4px 22px;
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: #444444;
+    border: 1px solid #f2f2f2;
+}
+
+@media (min-width: 426px) {
+    .Words #buttons>div:hover {
+        background-color: #444444;
+        border: 1px solid #f2f2f2;
+    }
+}
+
+@media (max-width: 577px) {
+    .Words #buttons>.unClicked-button {
+        padding: 2.8px 15px;
+    }
+
+    .Words #buttons>.clicked-button {
+        padding: 2.8px 15px;
+    }
+
+    .Words #buttons>div {
+        flex-grow: 1;
+    }
+}
+
+/* Loading -------------------- */
+.Words #loadingDiv {
+    /* padding-top: 5px; */
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.Words #loadingDiv>p {
+    margin: 10px;
+}
+
+.Words .fa-w {
+    font-size: 50px;
+}

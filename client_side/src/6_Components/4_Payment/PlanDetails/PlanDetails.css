@@ -1,0 +1,4 @@
+.PlanDetails p:nth-child(2) {
+    font-size: 27px;
+    margin: 16px 0;
+}

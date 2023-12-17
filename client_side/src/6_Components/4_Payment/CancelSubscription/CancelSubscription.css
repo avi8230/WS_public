@@ -1,0 +1,48 @@
+.CancelSubscription h2 {
+	margin-bottom: 2px;
+}
+
+/* Buttons ----------------- */
+.CancelSubscription button {
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 6px 7px 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+@media (min-width: 426px) {
+    .CancelSubscription button:hover {
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+    }
+}
+ 
+.CancelSubscription i {
+    margin: 0 3px 0 6px;
+}
+
+.CancelSubscription #container button {
+    margin-top: 11px;
+}
+
+/* Overlay ----------------- */
+.CancelSubscription #container {
+    border: solid 1px red;
+    border-radius: 15px;
+    padding: 13px 15px 2px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+}

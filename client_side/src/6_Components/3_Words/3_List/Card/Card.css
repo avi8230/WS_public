@@ -1,0 +1,96 @@
+.Card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px #b39143;
+    border-radius: 15px;
+}
+
+/* word & sentence --------------------------------- */
+.Card .wordContainer,
+.Card .sentenceContainer {
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.Card .wordContainer {
+    word-break: break-all;
+}
+
+.Card .sentenceContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Card .wordTranslationDiv,
+.Card .sentenceTranslationDiv {
+    color: rgb(143, 143, 143);
+    /* border-radius: 30px; */
+}
+
+.Card .wordDiv:hover,
+.Card .wordTranslationDiv:hover,
+.Card .sentenceDiv:hover,
+.Card .sentenceTranslationDiv:hover {
+    cursor: pointer;
+}
+
+.Card .hideTranslation {
+    background-color: rgb(37, 37, 37);
+    color: rgb(37, 37, 37);
+}
+
+/* picture & information & update and delete--------------------------------- */
+.Card .wordContainer>div,
+.Card .sentenceContainer>div,
+.Card .pictureDiv,
+.Card .informationDiv,
+.Card .deleteAndUpdateDiv {
+    padding: 3px 7px;
+}
+
+.Card .pictureAndInformationDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.Card .informationDiv,
+.Card .deleteAndUpdateDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Card .informationDiv {
+    font-size: 12px;
+}
+
+.Card .pictureDiv {
+    cursor: pointer;
+}
+
+.Card img {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: transform 0.1s ease-in-out;
+    position: relative;
+    z-index: 999;
+}
+
+.Card img:hover {
+    transform: scale(2.5);
+}
+
+@media (max-width: 422px) {
+
+    .Card img:hover {
+        transform: scale(2);
+    }
+}

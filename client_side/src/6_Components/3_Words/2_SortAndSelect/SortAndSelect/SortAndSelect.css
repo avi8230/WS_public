@@ -1,0 +1,110 @@
+/* 1.div's ------------------------------------------ */
+.SortAndSelect {
+    margin: 10px 2px 12px 2px;
+}
+
+.SortAndSelect #sortAndSelectForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+}
+
+.SortAndSelect #sortAndSelectForm>div {
+    background-color: rgb(55, 55, 55);
+    border-right: solid 1px rgb(152, 114, 42);
+    border-left: solid 1px rgb(152, 114, 42);
+    border-top: solid 1px rgb(152, 114, 42);
+    border-radius: 5px;
+}
+
+.SortAndSelect #sortDiv>div {
+    display: flex;
+    gap: 3px;
+}
+
+.SortAndSelect #dateDiv>div,
+.SortAndSelect #scoreDiv>div {
+    display: flex;
+}
+
+.SortAndSelect #categoryDiv,
+.SortAndSelect #pictureDiv,
+.SortAndSelect #searchDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.SortAndSelect #sortDiv,
+.SortAndSelect #scoreDiv,
+.SortAndSelect #dateDiv {
+    padding: 1px 4px;
+}
+
+.SortAndSelect #totalWordsDiv,
+.SortAndSelect #speedDiv {
+    padding: 4px;
+}
+
+/* 2.input ------------------------------------------ */
+.SortAndSelect label {
+    color: #FFC439;
+    font-size: 14px;
+}
+
+.SortAndSelect #searchDiv>input {
+    font-size: 15px;
+    width: 100px;
+}
+
+.SortAndSelect input,
+.SortAndSelect select {
+    background-color: rgb(21, 21, 21);
+    color: #f2f2f2;
+    /* border: 1px solid rgb(171, 171, 171); */
+    border: 1px solid #FFC439;
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 3px;
+}
+
+.SortAndSelect input:focus,
+.SortAndSelect select:focus {
+    outline: none;
+}
+
+.SortAndSelect input::-webkit-calendar-picker-indicator {
+    background-color: rgb(168, 168, 168);
+}
+
+/* 3.totalWords + reset ------------------------------------------ */
+.SortAndSelect #totalWordsSpan {
+    background-color: #FFC439;
+    color: black;
+    /* border: 1px solid rgb(171, 171, 171); */
+    padding: 3px 7px;
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 35px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.SortAndSelect #resetSpan {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 2.4px 6px;
+    margin-left: 3px;
+    border: 1px solid #FFC439;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+@media (min-width: 426px) {
+    .SortAndSelect #resetSpan:hover {
+        background-color: #FFC439;
+        border: 1px solid #FFC439;
+        color: black;
+    }
+}

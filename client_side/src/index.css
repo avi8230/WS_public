@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Arimo', sans-serif;
+    background-color: rgb(21, 21, 21);
+    color: #f2f2f2;
+    overflow-x: hidden;
+
+    /* Scrollbar ------------------------------------------------ */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(222, 154, 27);
+        border-radius: 10px;
+        border: 2px solid #c6c6c6;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: transparent
+    }
+}
