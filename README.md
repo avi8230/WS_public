@@ -1,8 +1,25 @@
 # Project Overview
 
-The project consists of 7 servers in the backend and a client-side.
+## Project's Website - WordStorage.com
+
+Welcome to WordStorage.com, the cornerstone of the most meaningful project I've undertaken to date. This platform is a robust language-learning tool, allowing users to delve into the intricacies of any language of their choice.
+
+### Features of WordStorage.com:
+
+- **Personal Word Database:**
+  - Users can effortlessly store words in a personalized database, complete with associated sentences and images for each word.
+
+- **Learning Area:**
+  - Immerse yourself in language learning by listening to words and sentences stored on the site.
+
+- **Testing Area:**
+  - Evaluate your language proficiency with interactive tests designed to reinforce your knowledge.
+
+Discover the world of language learning at [WordStorage.com](https://wordstorage.com/), where each word is a step toward mastering a new language.
 
 ## Server Details
+
+The project consists of 7 servers in the backend and a client-side.
 
 1. **Main Server (Server 1):**
    - Exposed to the Internet.
@@ -28,23 +45,6 @@ The project consists of 7 servers in the backend and a client-side.
 7. **Payments Server (Server 7):**
    - Collects payments from customers.
    - Connected to PayPal's server.
-
-## Project's Website - WordStorage.com
-
-Welcome to WordStorage.com, the cornerstone of the most meaningful project I've undertaken to date. This platform is a robust language-learning tool, allowing users to delve into the intricacies of any language of their choice.
-
-### Features of WordStorage.com:
-
-- **Personal Word Database:**
-  - Users can effortlessly store words in a personalized database, complete with associated sentences and images for each word.
-
-- **Learning Area:**
-  - Immerse yourself in language learning by listening to words and sentences stored on the site.
-
-- **Testing Area:**
-  - Evaluate your language proficiency with interactive tests designed to reinforce your knowledge.
-
-Discover the world of language learning at [WordStorage.com](https://wordstorage.com/), where each word is a step toward mastering a new language.
 
 ## Code Availability
 
