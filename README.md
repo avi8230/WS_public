@@ -1,51 +1,41 @@
-# Project Overview
+# [WordStorage.com](https://www.wordstorage.com/)
 
-## Project's Website - WordStorage.com
+## Project Overview
+WordStorage.com is a language learning platform that allows users to learn any language of their choice. The user's personal space on the website is comprised of three main components:
 
-Welcome to WordStorage.com, the cornerstone of the most meaningful project I've undertaken to date. This platform is a robust language-learning tool, allowing users to delve into the intricacies of any language of their choice.
+1. **Word Storage:** Allows users to save words they want to remember, along with a sentence and an image.
+2. **Word Playback:** Filters words using a dedicated player that reads the words and sentences. The player supports 149 languages.
+3. **Word Quiz:** A quiz feature to test the user's knowledge of the stored words.
 
-### Features of WordStorage.com:
+## Server Architecture
 
-- **Personal Word Database:**
-  - Users can effortlessly store words in a personalized database, complete with associated sentences and images for each word.
-
-- **Learning Area:**
-  - Immerse yourself in language learning by listening to words and sentences stored on the site.
-
-- **Testing Area:**
-  - Evaluate your language proficiency with interactive tests designed to reinforce your knowledge.
-
-Discover the world of language learning at [WordStorage.com](https://wordstorage.com/), where each word is a step toward mastering a new language.
-
-## Server Details
-
-The project consists of 7 servers in the backend and a client-side.
+The project is built on a client-server architecture with a total of 7 servers in the backend and client-side.
 
 1. **Main Server (Server 1):**
    - Exposed to the Internet.
    - Manages all client requests, organizing and directing them to the appropriate server.
 
 2. **Database Server (Server 2):**
-   - Manages the project's database.
+   - Exposes the database to other servers as needed.
+   - Includes models representing database tables, business logic, and controllers exposing APIs.
 
 3. **Photos Server (Server 3):**
-   - Manages all photo files on the site.
+   - Manages all site images, organizing them in user-specific directories and exposing them externally.
 
 4. **Audio Server (Server 4):**
-   - Manages the website's audio.
-   - Connected to a Microsoft server for text-to-speech conversion.
+   - Manages all audio files on the site.
+   - Generates audio files on demand by connecting to the Microsoft "text-to-speech" server.
 
 5. **Authentication Server (Server 5):**
-   - Verifies the client's identity.
+   - Verifies user identity and handles all actions related to accessing the personal area, such as registration, login, and password reset.
 
 6. **Email Server (Server 6):**
-   - Sends emails to customers.
-   - Connected to the Gmail server.
+   - Sends emails to the site administrator or users as needed.
+   - Utilizes a Gmail server for sending emails.
 
 7. **Payments Server (Server 7):**
-   - Collects payments from customers.
-   - Connected to PayPal's server.
+   - Handles payment transactions for site usage and controls access to the site.
+   - Connected to the PayPal server for payment processing.
 
 ## Code Availability
-
-The publicly available code is only partial and is intended solely for demonstration purposes.
+The publicly available code is partial and intended solely for demonstration purposes.
