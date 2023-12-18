@@ -16,7 +16,7 @@ The project is built on a client-server architecture with a total of 7 servers i
    - Manages all client requests, organizing and directing them to the appropriate server.
 
 2. **Database Server (Server 2):**
-   - Exposes the database to other servers as needed.
+   - This server connects to a MySQL database.
    - Includes models representing database tables, business logic, and controllers exposing APIs.
 
 3. **Photos Server (Server 3):**
