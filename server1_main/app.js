@@ -14,6 +14,8 @@ try {
     const preferencesController = require("./controllers/preferences-controller");
     const userController = require("./controllers/users-controller");
     const paymentController = require("./controllers/payment-controller");
+    const translateController = require("./controllers/translate-controller");
+    const wordToSentenceController = require("./controllers/wordToSentence-controller");
     const path = require('path');
 
     const server = express();
@@ -42,6 +44,9 @@ try {
     server.use("/api/preferences", preferencesController);
 
     server.use("/api/payment", paymentController);
+
+    server.use("/api/translate", translateController);
+    server.use("/api/word-to-sentence", wordToSentenceController);
     // ---------------
 
     // server.use("*", (request, response) => {

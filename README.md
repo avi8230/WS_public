@@ -7,6 +7,16 @@ WordStorage.com is a language learning platform that allows users to learn any l
 2. **Word Playback:** Filters words using a dedicated player that reads the words and sentences. The player supports 149 languages.
 3. **Word Quiz:** A quiz feature to test the user's knowledge of the stored words.
 
+## Technologies Embedded in the Project
+
+Technologies embedded in the project include:
+
+- **Text to Speech:** Microsoft
+- **Translation:** Google Translate
+- **Chatbot:** OpenAI - ChatGPT
+- **Payment Processing:** PayPal
+- *and more...*
+
 ## Server Architecture
 
 The project is built on a client-server architecture with a total of 7 servers in the backend and client-side.
@@ -36,6 +46,14 @@ The project is built on a client-server architecture with a total of 7 servers i
 7. **Payments Server (Server 7):**
    - Handles payment transactions for site usage and controls access to the site.
    - Connected to the PayPal server for payment processing.
+
+8. **Translation Server (Server 8):**
+   - Translates between any languages.
+   - Connected to Google's translation server.
+
+9. **WordToSentence Server (Server 9):**
+   - Takes a word as input and generates a sentence mentioning the word using artificial intelligence.
+   - Connected to OpenAI's ChatGPT server.
 
 ## Code Availability
 The publicly available code is partial and intended solely for demonstration purposes.
