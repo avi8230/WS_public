@@ -19,7 +19,7 @@ Technologies embedded in the project include:
 
 ## Server Architecture
 
-The project is built on a client-server architecture with a total of 7 servers in the backend and client-side.
+The project is built on a client-server architecture with a total of 9 servers in the backend and client-side.
 
 1. **Main Server (Server 1):**
    - Exposed to the Internet.
