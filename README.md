@@ -9,13 +9,12 @@ WordStorage.com is a language learning platform that allows users to learn any l
 
 ## Technologies Embedded in the Project
 
-Technologies embedded in the project include:
+Some of the technologies embedded in the project are:
 
 - **Text to Speech:** Microsoft
 - **Translation:** Google Translate
 - **Chatbot:** OpenAI - ChatGPT
 - **Payment Processing:** PayPal
-- *and more...*
 
 ## Server Architecture
 
