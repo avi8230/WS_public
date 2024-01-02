@@ -54,5 +54,8 @@ The project is built on a client-server architecture with a total of 9 servers i
    - Takes a word as input and generates a sentence mentioning the word using artificial intelligence.
    - Connected to OpenAI's ChatGPT server.
 
+## Responsive Design
+The website is built with a responsive design, ensuring an optimal user experience across various devices and screen sizes. The layout and content dynamically adjust to provide a seamless and visually appealing interface on desktops, tablets, and smartphones. This enhances accessibility and usability for users accessing WordStorage.com from different devices.
+
 ## Code Availability
 The publicly available code is partial and intended solely for demonstration purposes.
