@@ -54,8 +54,5 @@ The project is built on a client-server architecture with a total of 9 servers i
    - Takes a word as input and generates a sentence mentioning the word using artificial intelligence.
    - Connected to OpenAI's ChatGPT server.
 
-## Responsive Design
-The website is designed to be responsive, adapting to various screen sizes.
-
 ## Code Availability
 The publicly available code is partial and intended solely for demonstration purposes.
