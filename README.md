@@ -55,7 +55,7 @@ The project is built on a client-server architecture with a total of 9 servers i
    - Connected to OpenAI's ChatGPT server.
 
 ## Responsive Design
-The website is built with a responsive design, ensuring an optimal user experience across various devices and screen sizes. The layout and content dynamically adjust to provide a seamless and visually appealing interface on desktops, tablets, and smartphones. This enhances accessibility and usability for users accessing WordStorage.com from different devices.
+The website is designed to be responsive, adapting to various screen sizes.
 
 ## Code Availability
 The publicly available code is partial and intended solely for demonstration purposes.
